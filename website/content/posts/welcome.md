@@ -3,8 +3,6 @@ title: "Welcome"
 date: 2022-11-27T21:03:17Z
 draft: false
 relative: true
-cover:
-  image: norway.jpg
 ---
 # Welcome
 
@@ -20,3 +18,4 @@ In other words, I don't have any more excuses....
 
 I am going to run through a few hugo docs to figure out how I want to get a bit more power into my posts. I am guessing that most of it I will do via standard markdown, and perhaps host my image content in some object storage somewhere. Whatever I decide to do, the goal is cheap, fast, and easy and I WILL choose all three ;)
 
+![Norway is Beautiful](norway.jpg)
