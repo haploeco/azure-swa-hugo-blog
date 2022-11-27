@@ -1,4 +1,4 @@
-baseURL = 'http://blog.azure.sedawk.ninja'
+baseURL = 'https://blog.sedawk.ninja'
 languageCode = 'en-us'
 title = 'Sed? Awk? Ninja!'
 theme = 'ananke'
