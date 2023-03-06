@@ -1,7 +1,7 @@
 ---
 title: "Notion"
 date: 2023-03-06T04:01:45Z
-draft: true
+draft: false
 ---
 
 # Thoughs about Notion
