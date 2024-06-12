@@ -1,4 +1,5 @@
 baseURL = 'https://blog.sedawk.ninja'
 languageCode = 'en-us'
 title = 'Sed? Awk? Ninja!'
+year = '2024'
 theme = 'ananke'
