@@ -1,10 +1,8 @@
 ---
-title: "First_post"
+title: "First_post - Let's do this!"
 date: 2022-11-26T05:47:15-06:00
 draft: false
 ---
-
-# First Post - Let's do this!
 
 This has a bit of content for us to look at!
 

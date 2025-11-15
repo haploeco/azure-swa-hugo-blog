@@ -4,7 +4,6 @@ date: 2022-11-27T21:03:17Z
 draft: false
 relative: true
 ---
-# Welcome
 
 As I attempt to figure out how I want to create a workflow with hugo, you will likely see some pretty boring content getting posted here. Fear not, the real content will likely be just as boring!
 

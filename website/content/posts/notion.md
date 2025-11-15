@@ -1,10 +1,8 @@
 ---
-title: "Notion"
+title: "Thoughts on Notion"
 date: 2024-06-12T14:54:45Z
 draft: false
 ---
-
-# Thoughs about Notion
 
 I have heard a lot of people talking about notion and how they like it, so I thought that I might give it a go. I wanted to toss out a few of my initial impressions.
 
