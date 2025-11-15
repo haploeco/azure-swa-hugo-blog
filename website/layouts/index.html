@@ -1,0 +1,61 @@
+{{ define "title" }}{{ .Site.Title }} · Home{{ end }} {{ define "main" }}
+<section class="card">
+  <h2>
+    Hi, I’m {{ with .Site.Params.name }}{{ . }}{{ else }}a systems architect{{
+    end }}.
+  </h2>
+  <p>
+    I spend my time designing and operating systems that don’t fall over when
+    things get weird: Linux everywhere, security by default, and cloud
+    architectures that are boring in all the right ways.
+  </p>
+  <p>
+    Natet.io is my little corner of the internet for experiments, notes, and the
+    occasional deep dive into how modern infrastructure actually works.
+  </p>
+
+  <div class="pill-row">
+    <span class="pill">Linux on bare metal &amp; in the cloud</span>
+    <span class="pill">AWS &amp; cloud-native patterns</span>
+    <span class="pill">Security-first architecture</span>
+    <span class="pill">Automation &amp; IaC</span>
+  </div>
+</section>
+
+<section class="card">
+  <h2>What I’m into</h2>
+  <p>On any given day you’ll probably find me:</p>
+  <ul>
+    <li>Hardening Linux systems and tuning them for real workloads.</li>
+    <li>
+      Designing cloud architectures that balance security, reliability, and
+      developer sanity.
+    </li>
+    <li>
+      Automating everything with Infrastructure as Code and CI/CD pipelines.
+    </li>
+    <li>
+      Exploring security controls, threat models, and how they apply to real
+      orgs—not just slide decks.
+    </li>
+  </ul>
+  <p>
+    Over time, this site will collect write-ups, diagrams, and small tools that
+    I’ve found useful.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Where to find more</h2>
+  <p>
+    This site is still early days. Eventually you’ll find posts, notes, and
+    maybe a small portfolio of projects here. For now, you can think of it as a
+    landing page that says:
+    <em>“Yes, Natet is absolutely still hacking on things.”</em>
+  </p>
+  <p>
+    If you’re into Linux, cloud, security, or IT architecture, you’ll probably
+    feel at home.
+  </p>
+</section>
+{{ end }}

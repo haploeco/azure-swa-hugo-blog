@@ -2,7 +2,7 @@ baseURL = 'https://blog.sedawk.ninja'
 languageCode = 'en-us'
 title = 'Sed? Awk? Ninja!'
 year = '2025'
-theme = 'ananke'
+theme = ''
 
 [params]
 name = "Nathaniel Thompson"
