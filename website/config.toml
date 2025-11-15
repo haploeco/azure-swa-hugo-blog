@@ -8,4 +8,4 @@ theme = ''
 name = "Nathaniel Thompson"
 tagline = "Linux • Cloud • Security • Architecture"
 subtitle = "Techie, tinkerer, and systems architect who lives in the terminal."
-heroImage = "https://unsplash.com/photos/a-foggy-forest-with-trees-Sqgkj4CnXxE"
+heroImage = "/static/images/hero-norway.jpg"
