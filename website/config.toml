@@ -1,5 +1,12 @@
 baseURL = 'https://blog.sedawk.ninja'
 languageCode = 'en-us'
 title = 'Sed? Awk? Ninja!'
-year = '2024'
+year = '2025'
 theme = 'ananke'
+
+[params]
+name = "Nathaniel Thompson"
+tagline = "Linux • Cloud • Security • Architecture"
+subtitle = "Techie, tinkerer, and systems architect who lives in the terminal."
+heroImage = "https://images.unsplash.com/photo-1500043201641-4b05207c9800?auto=format&fit=crop&w=1600&q=80"
+
