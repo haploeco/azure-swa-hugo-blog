@@ -322,10 +322,20 @@
           width: 100%;
         }
       }
+
       html,
       body {
         max-width: 100%;
         overflow-x: hidden;
+      }
+
+      .site-title-link {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .site-title-link:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -340,8 +350,10 @@
           >
         </div>
         <h1>
-          {{ with .Site.Params.name }}{{ . }}{{ else }}{{ .Site.Title }}{{ end
-          }}
+          <a href="/" class="site-title-link">
+            {{ with .Site.Params.name }}{{ . }}{{ else }}{{ .Site.Title }}{{ end
+            }}
+          </a>
         </h1>
         <p class="hero-subtitle">
           {{ with .Site.Params.subtitle }} {{ . }} {{ else }} Building reliable
