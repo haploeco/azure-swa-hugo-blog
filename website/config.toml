@@ -5,7 +5,7 @@ year = '2025'
 theme = ''
 
 [params]
-name = "Nathaniel Thompson"
+name = "Nate Thompson"
 tagline = "Linux • Cloud • Security • Architecture"
-subtitle = "Techie, tinkerer, and systems architect who lives in the terminal."
+subtitle = "Techie, tinkerer, and Systems Architect who lives in the terminal."
 heroImage = "/images/hero-norway.jpg"

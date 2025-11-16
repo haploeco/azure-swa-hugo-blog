@@ -6,11 +6,11 @@ draft: false
 
 This has a bit of content for us to look at!
 
-## How did we get here?
+### How did we get here?
 
 I used Ned in the Cloud's post on how to deploy Hugo to Azure with Github Actions to deploy this site.
 
-## What do I need to do next?
+### What do I need to do next?
 
 I would like to start with keeping a simple blog, and this might be a good way to do it.
 

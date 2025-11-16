@@ -12,17 +12,17 @@ showInList: true
 toc: true
 
 cover: ""
-author: "Nathaniel Thompson (Haplo)"
+author: "Nate Thompson (Haplo)"
 summary: ""
 
 slug: "{{ .Name | urlize }}"
 ---
 
-## Introduction
+### Introduction
 
-## Key Points
+### Key Points
 
-## Takeaways
+### Takeaways
 
-## References
+### References
 
