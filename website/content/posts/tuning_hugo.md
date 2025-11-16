@@ -1,7 +1,7 @@
 ---
 title: "Tuning Hugo ease of use"
 date: 2025-11-15T12:02:48-07:00
-draft: true
+draft: false
 
 description: "Exploring ways to make writing hugo content easier and more efficient."
 
