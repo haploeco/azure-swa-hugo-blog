@@ -1,0 +1,39 @@
+<div class="sidebar-widget">
+  <h2>About</h2>
+  <p>
+    I’m Nathaniel Thompson. I write about systems architecture, DevOps, homelab
+    tinkering, and whatever else I’m exploring.
+  </p>
+</div>
+
+<div class="sidebar-widget">
+  <h2>Latest posts</h2>
+  <ul>
+    {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="sidebar-post-date"> {{ .Date.Format "2006-01-02" }} </span>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+
+<div class="sidebar-widget">
+  <h2>Tags</h2>
+  <div class="sidebar-tags">
+    {{ range $tag, $pages := .Site.Taxonomies.tags }}
+    <a href="{{ (index $pages 0).RelPermalink }}" class="tag-pill">
+      {{ $tag }} ({{ len $pages }})
+    </a>
+    {{ end }}
+  </div>
+</div>
+
+<div class="sidebar-widget">
+  <h2>Links</h2>
+  <ul>
+    <li><a href="/posts/">All posts</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/contact/">Contact</a></li>
+  </ul>
+</div>

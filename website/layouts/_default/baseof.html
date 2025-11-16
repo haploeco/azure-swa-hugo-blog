@@ -104,12 +104,25 @@
         color: rgba(255, 255, 255, 0.75);
       }
 
-      main {
-        max-width: 960px;
+      .layout {
+        max-width: 1100px;
         margin: -60px auto 2rem;
         padding: 0 1.25rem 3rem;
         position: relative;
         z-index: 2;
+
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+      }
+
+      .layout-main {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+
+      .layout-sidebar {
+        flex: 0 0 260px;
       }
 
       .card {
@@ -136,9 +149,9 @@
         margin-bottom: 0.75rem;
       }
 
-      /* main h1 { */
-      /*   font-size: 1.8rem; */
-      /* } */
+      main h1 {
+        font-size: 1.8rem;
+      }
 
       p {
         margin: 0 0 0.75rem;
@@ -207,6 +220,90 @@
         color: var(--muted);
         margin-top: 0.1rem;
       }
+
+      /* Sidebar widgets */
+      .sidebar-widget {
+        background:
+          radial-gradient(
+            circle at top left,
+            var(--accent-soft),
+            transparent 55%
+          ),
+          linear-gradient(to bottom, var(--bg-alt), #05070b);
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        padding: 1rem 1.25rem;
+        margin-bottom: 1.25rem;
+        font-size: 0.95rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+      }
+
+      .sidebar-widget h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.05rem;
+      }
+
+      .sidebar-widget p {
+        margin-bottom: 0.5rem;
+      }
+
+      .sidebar-widget ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .sidebar-widget li + li {
+        margin-top: 0.4rem;
+      }
+
+      .sidebar-widget a {
+        text-decoration: none;
+      }
+
+      .sidebar-widget a:hover {
+        text-decoration: underline;
+      }
+
+      /* Latest posts dates in sidebar */
+      .sidebar-post-date {
+        display: block;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      /* Tag pills in sidebar */
+      .sidebar-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+
+      .tag-pill {
+        display: inline-block;
+        padding: 0.2rem 0.6rem;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(10, 16, 22, 0.9);
+        font-size: 0.8rem;
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .tag-pill:hover {
+        border-color: rgba(255, 255, 255, 0.35);
+      }
+
+      /* Mobile: stack sidebar under content */
+      @media (max-width: 800px) {
+        .layout {
+          flex-direction: column;
+        }
+
+        .layout-sidebar {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -231,7 +328,11 @@
       </div>
     </header>
 
-    <main>{{ block "main" . }}{{ end }}</main>
+    <div class="layout">
+      <main class="layout-main">{{ block "main" . }}{{ end }}</main>
+
+      <aside class="layout-sidebar">{{ partial "sidebar.html" . }}</aside>
+    </div>
 
     <footer>
       &copy; {{ now.Year }} {{ .Site.Title }} · Crafted with Hugo &amp; a love
