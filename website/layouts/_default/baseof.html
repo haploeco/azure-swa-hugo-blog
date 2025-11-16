@@ -119,10 +119,22 @@
       .layout-main {
         flex: 1 1 auto;
         min-width: 0;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
       }
 
       .layout-sidebar {
         flex: 0 0 260px;
+      }
+
+      /* Keep post images inside the main content column */
+      .layout-main img {
+        display: block;
+        max-width: 100%; /* never wider than the column */
+        height: auto;
+        margin: 1.25rem 0; /* breathing room above/below */
+        border-radius: 12px; /* optional, matches your card feel */
       }
 
       .card {
@@ -309,6 +321,11 @@
         .layout-sidebar {
           width: 100%;
         }
+      }
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
       }
     </style>
   </head>
