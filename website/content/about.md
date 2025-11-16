@@ -17,7 +17,7 @@ summary: "Systems architecture, Linux, cloud, security, and homelab experiments 
 slug: "about"
 ---
 
-## Hi, I’m Nate, most call me Nate, but online I'm Haplo 👋
+## Hi 👋, I’m Nate
 
 I’m a Systems Architect who spends most of my time at the intersection of:
 
